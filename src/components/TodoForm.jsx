@@ -2,7 +2,10 @@ import React from 'react'
 
 function TodoForm() {
   return (
-    <div>TodoForm</div>
+    <form className='todoForm'>
+        <input type="text" className='todoInput' placeholder='What do you plan to do ?'/>
+        <button type='submit' className='todoBtn'>Add</button>
+    </form>
   )
 }
 

@@ -1,8 +1,11 @@
 import React from 'react'
+import TodoForm from './TodoForm'
 
 function TodoWrapper() {
   return (
-    <div>TodoWrapper</div>
+    <div>
+      <TodoForm/>
+    </div>
   )
 }
 
