@@ -1,2 +1,1 @@
-# react-todo
-This is a to do App made with react
+A todo App made with react
