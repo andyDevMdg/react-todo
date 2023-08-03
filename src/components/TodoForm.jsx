@@ -1,6 +1,7 @@
-import React from 'react'
+import React , { useState }from 'react'
 
 function TodoForm() {
+    const [value, setValue] = useState("")
   return (
     <form className='todoForm'>
         <input type="text" className='todoInput' placeholder='What do you plan to do ?'/>
