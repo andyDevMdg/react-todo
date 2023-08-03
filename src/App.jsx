@@ -1,11 +1,11 @@
 import './App.css'
 import TodoForm from './components/TodoForm'
-import TodoWrapper from './components/TodoWrapper'
+import TodoContainer from './components/TodoContainer'
 
 function App() {
   return (
     <>
-      <TodoWrapper/>
+      <TodoContainer/>
     </>
   )
 }

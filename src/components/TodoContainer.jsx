@@ -1,12 +1,12 @@
 import React from 'react'
 import TodoForm from './TodoForm'
 
-function TodoWrapper() {
+function TodoContainer() {
   return (
-    <div>
+    <div className='todoContainer'>
       <TodoForm/>
     </div>
   )
 }
 
-export default TodoWrapper
+export default TodoContainer
