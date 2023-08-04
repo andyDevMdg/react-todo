@@ -6,12 +6,15 @@ function TodoForm({addTodo}) {
     const handleSubmit = e => {
         e.preventDefault();
 
-        addTodo(value)
+        addTodo(value);
+
+        setValue("")
     }
   return (
     <form className='todoForm' onSubmit={handleSubmit}>
         <input type="text" 
         className='todoInput' 
+        value={value} 
         placeholder='What do you plan to do ?' 
         onChange={(e) => setValue(e.target.value)}/>
         <button type='submit' className='todoBtn'>Add</button>
