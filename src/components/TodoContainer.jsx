@@ -39,7 +39,7 @@ function TodoContainer() {
 
   return (
     <div className='todoContainer'>
-      <h1 className='todoTitle'>Your todos</h1>
+      <h1 className='todoTitle'> --- Your todos --- </h1>
       <TodoForm addTodo={addTodo} />
       {todos.map((todo, index) => (
         todo.isEditing ? (<EditTodoForm editTodo={editTask} task={todo}/>) :
