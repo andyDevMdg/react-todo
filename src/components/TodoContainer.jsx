@@ -32,17 +32,22 @@ function TodoContainer() {
     setTodos(todos.map(todo => todo.id === id ? { ...todo, isEditing: !todo.isEditing } : todo))
   }
 
+  const editTask = (task,id) => {
+    setTodos(todos.map(todo => todo.id === id ? 
+      {...todo, task, isEditing: !todo.isEditing} : todo))
+  }
+
   return (
     <div className='todoContainer'>
       <h1>Your todos</h1>
       <TodoForm addTodo={addTodo} />
       {todos.map((todo, index) => (
-        todo.isEditing ? (<EditTodoForm/>) : 
-        (<Todo task={todo} key={index}
-          toggleComplete={toggleComplete}
-          deleteTodo={deleteTodo}
-          editTodo={editTodo} />
-        )
+        todo.isEditing ? (<EditTodoForm editTodo={editTask} task={todo}/>) :
+          (<Todo task={todo} key={index}
+            toggleComplete={toggleComplete}
+            deleteTodo={deleteTodo}
+            editTodo={editTodo} />
+          )
       ))}
     </div>
   )
