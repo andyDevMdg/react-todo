@@ -8,6 +8,9 @@
     color: white;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    letter-spacing: 0.01em;
+    font-size: 14px;
 }
 
 .taskBtnContainer {
@@ -33,5 +36,4 @@
 
 .todo>p {
     cursor: pointer;
-    user-select: none;
 }
