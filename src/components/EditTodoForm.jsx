@@ -11,13 +11,13 @@ function EditTodoForm({editTodo, task}) {
         setValue("")
     }
   return (
-    <form className='todoForm' onSubmit={handleSubmit}>
+    <form className='todoEditForm' onSubmit={handleSubmit}>
         <input type="text" 
         className='todoInput' 
         value={value} 
-        placeholder='Update your task' 
+        placeholder='Edit your task' 
         onChange={(e) => setValue(e.target.value)}/>
-        <button type='submit' className='todoBtn'>Update</button>
+        <button type='submit' className='todoBtnEdit'>Edit</button>
     </form>
   )
 }

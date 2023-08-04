@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    margin-bottom: 10px;
 }
 
 .todoInput {
@@ -14,10 +14,13 @@
     width: 70%;
     height: 20px;
     padding: 10px 20px;
-    margin-left: 10px;
     font-size: 14px;
     letter-spacing: 0.02em;
 }
+
+.todoInput::placeholder {
+    color: #0000004d;
+  }
 
 .todoBtn {
     background-color: white;
@@ -27,6 +30,7 @@
     height: 40px;
     font-weight: 700;
     font-size: 16px;
+    margin-left: 10px;
 }
 
 .todoBtn:hover {
@@ -38,4 +42,36 @@
 .todoBtn:active {
     transform: none;
     box-shadow: none;
+}
+
+.todoBtnEdit {
+    color: white;
+    background-color: rgb(255, 59, 59);
+    border: rgb(255, 59, 59) 2px solid;
+    border-radius: 10px;
+    width: 10%;
+    height: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.todoBtnEdit:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 5px 0px rgb(73, 73, 73);
+    transform: translateY(-3px);
+}
+
+.todoBtnEdit:active {
+    transform: none;
+    box-shadow: none;
+}
+
+.todoEditForm {
+    margin-top: 13px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
 }
